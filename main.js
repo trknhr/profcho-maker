@@ -179,7 +179,9 @@ function onTextInputClick(canvasArea, x, y) {
 
     const mainContainer = document.getElementById('container');
     function reset() {
-        mainContainer.removeChild(input);
+        if(mainContainer.contains(input)) {
+            mainContainer.removeChild(input);
+        }
         canvasArea.zoom(scale, 1, 0, 0)
     }
 
@@ -200,14 +202,11 @@ function onTextInputClick(canvasArea, x, y) {
                 // Implement submission logic here
                 // self.inputtedText = input.value;
                 userData[self.id] = { text: input.value }
-                mainContainer.removeChild(input);
                 // Reset zoom or other actions
                 localStorage.setItem("prof-maker-data", JSON.stringify(userData))
-                canvasArea.zoom(scale, 1, 0, 0)
+                reset()
             } else if (event.key === 'Escape') {
-                mainContainer.removeChild(input);
-                // Reset zoom or other actions
-                canvasArea.zoom(scale, 1, 0, 0)
+                reset()
             }
         }
     })
