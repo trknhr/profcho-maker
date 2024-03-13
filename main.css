@@ -1,0 +1,23 @@
+@font-face { font-family: jk-font; src: url('./JKG-L_3.ttf'); } 
+
+#container {
+    position: relative;
+    width: 640px; /* Canvasの幅 */
+    height: 480px; /* Canvasの高さ */
+}
+#myCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#textInput {
+    position: absolute;
+    top: 10px; /* タグのY座標 */
+    left: 100px; /* タグのX座標 */
+    display: none;
+    font-family: 'jk-font';
+}
+
+#hitCanvas {
+    display: none
+}
