@@ -2,7 +2,7 @@
 
 WEB DE プロフ帳に自由に書き込めるよ❤️
 
-# How to start
+# どうやって始めるか
 
 静的ファイルをホストするwebサーバーを立ち上げてください
 
@@ -25,3 +25,8 @@ https://font.cutegirl.jp/jk-font-light.html
 
 プロフ帳画像
 https://twitter.com/otona_profile
+
+# 試してみる
+
+こちらからアクセスして試してください
+https://trknhr.github.io/profcho-maker/
